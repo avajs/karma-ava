@@ -1,6 +1,6 @@
 {
   "name": "karma-ava",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Karma plugin for AVA",
   "license": "MIT",
   "repository": "avajs/karma-ava",
