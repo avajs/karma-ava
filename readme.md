@@ -1,4 +1,4 @@
-# karma-ava [![Build Status](https://travis-ci.org/jamestalmage/karma-ava.svg?branch=master)](https://travis-ci.org/jamestalmage/karma-ava)
+# karma-ava [![Build Status](https://travis-ci.org/avajs/karma-ava.svg?branch=master)](https://travis-ci.org/avajs/karma-ava)
 
 > Run [AVA](https://ava.li) tests with [Karma](https://karma-runner.github.io)
 
