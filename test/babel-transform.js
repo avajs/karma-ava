@@ -9,7 +9,7 @@ test('successfully converts es2015 code', async () => {
 	b.transform(babelTransform({file: fixture('test', 'es2015.js')}));
 	b.external('ava-bundler-external/process-adapter');
 	b.add(fixture('test', 'es2015.js'));
-	await pify(b.bundle.bind(b))();
+	await pify(b.bundle.bind(b), Promise)();
 });
 
 test('dows not convert if file does not match', t => {
@@ -17,5 +17,5 @@ test('dows not convert if file does not match', t => {
 	b.transform(babelTransform({file: fixture('test', 'es2015.js')}));
 	b.external('ava-bundler-external/process-adapter');
 	b.add(fixture('test', '_es2015.js'));
-	t.throws(pify(b.bundle.bind(b))());
+	t.throws(pify(b.bundle.bind(b), Promise)());
 });

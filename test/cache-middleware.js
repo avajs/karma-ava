@@ -5,7 +5,8 @@ import findCacheDir from 'find-cache-dir';
 import pify from 'pify';
 import cacheMiddleware from '../lib/cache-middleware';
 
-const fsP = pify(fs);
+const fsP = pify(fs, Promise);
+
 const time = () => process.hrtime().join('-');
 
 async function macro(t, name) {
